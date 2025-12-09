@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elma və HRB Sistem Problemləri - Texniki Sənəd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h1 class="hero-title">Elma və HRB Sistem Problemləri</h1>
+                <p class="hero-subtitle">Texniki Analiz və Həll Təklifləri</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Əsas Problem</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Həll Təklifi</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Təkmilləşdirmə</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-container">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Problem 1 -->
+            <section class="problem-card" data-problem="1">
+                <div class="problem-header">
+                    <div class="problem-number">
+                        <span>01</span>
+                    </div>
+                    <div class="problem-title-section">
+                        <h2 class="problem-title">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Overtime-in HRB-də əks olunmaması
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="problem-body">
+                    <div class="problem-description">
+                        <div class="section-badge problem-badge">
+                            <i class="fas fa-bug"></i> Problem
+                        </div>
+                        <ul class="problem-list">
+                            <li><i class="fas fa-chevron-right"></i> Elmada ezam prosesi yaradılır</li>
+                            <li><i class="fas fa-chevron-right"></i> Prosesin içində overtime bəndi seçilir</li>
+                            <li><i class="fas fa-chevron-right"></i> Lakin bu overtime HRB proqramında görünmür</li>
+                            <li><i class="fas fa-chevron-right"></i> <strong>Nəticə:</strong> əmək haqqı, statistikalar, kompensasiyalar düzgün hesablana bilmir</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution-description">
+                        <div class="section-badge solution-badge">
+                            <i class="fas fa-check-circle"></i> Təklif olunan həll
+                        </div>
+                        <div class="solution-steps">
+                            <div class="solution-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Elmada → HRB inteqrasiyasını yoxlamaq</h4>
+                                    <p>Overtime məlumatı avtomatik olaraq HRB moduluna ötürülməlidir</p>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Ezam prosesi və overtime modulunu birləşdirən trigger əlavə etmək</h4>
+                                    <p>Ezam içində overtime seçimi → HRB-də avtomatik entry yaransın</p>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Əlavə yoxlama</h4>
+                                    <p>Hər yeni ezam prosesi üçün HRB-də overtime görünməsi test edilməlidir</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problem 2 -->
+            <section class="problem-card" data-problem="2">
+                <div class="problem-header">
+                    <div class="problem-number">
+                        <span>02</span>
+                    </div>
+                    <div class="problem-title-section">
+                        <h2 class="problem-title">
+                            <i class="fas fa-database"></i>
+                            Elmada proses start ediləndə sətrlərin itməsi
+                        </h2>
+                        <p class="problem-subtitle">HRB uyğunsuzluğunun əsas səbəbi</p>
+                    </div>
+                </div>
+                
+                <div class="problem-body">
+                    <div class="problem-description">
+                        <div class="section-badge problem-badge">
+                            <i class="fas fa-bug"></i> Problem
+                        </div>
+                        <ul class="problem-list">
+                            <li><i class="fas fa-chevron-right"></i> Overtime prosesləri Elmadan gəlir</li>
+                            <li><i class="fas fa-chevron-right"></i> Məlumatlar manual olaraq Excel-ə yığılır və real siyahı doludur</li>
+                            <li><i class="fas fa-chevron-right"></i> <strong>Əsas problem:</strong> Elmada proses start edilən anda sətrlər itir</li>
+                            <li><i class="fas fa-chevron-right"></i> Elma özü bütün əməkdaşları tam şəkildə prosesə salmır</li>
+                        </ul>
+                        
+                        <div class="info-box warning-box">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <strong>Məsələn:</strong>
+                                <ul>
+                                    <li>Real siyahı: <span class="highlight-number">3000 nəfər</span></li>
+                                    <li>Elmada start olunmuş prosesdə görünən: <span class="highlight-number danger">2000 nəfər</span></li>
+                                    <li>İtən: <span class="highlight-number danger">1000 nəfər</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box error-box">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <strong>Nəticə:</strong> HRB-yə də yalnız Elmada qalan 2000 nəfərin məlumatı ötürülür – qalan 1000 nəfər ümumiyyətlə sistemə daxil olmur
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution-description">
+                        <div class="section-badge solution-badge">
+                            <i class="fas fa-check-circle"></i> Təklif olunan həll
+                        </div>
+                        <div class="solution-steps">
+                            <div class="solution-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Elmada "Full Load" modunun əlavə edilməsi</h4>
+                                    <p>Proses start edəndə bütün əməkdaşların düşməsi üçün "full generation mode" yaradılmalıdır. Hazırda sadəcə "partial load" baş verir</p>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Excel vs Elma avtomatik fərq hesabatı</h4>
+                                    <p>Excel siyahısı ilə Elmanın start etdiyi proses avtomatik müqayisə olunmalı, "Excel-də var, Elmada yoxdur" list formalaşmalıdır</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problem 3 -->
+            <section class="problem-card" data-problem="3">
+                <div class="problem-header">
+                    <div class="problem-number">
+                        <span>03</span>
+                    </div>
+                    <div class="problem-title-section">
+                        <h2 class="problem-title">
+                            <i class="fas fa-file-pdf"></i>
+                            Elmada Overtime Siyahısının PDF Olması
+                        </h2>
+                        <p class="problem-subtitle">Dəyişiklik Edilməməsi Problemi</p>
+                    </div>
+                </div>
+                
+                <div class="problem-body">
+                    <div class="problem-description">
+                        <div class="section-badge problem-badge">
+                            <i class="fas fa-bug"></i> Problem
+                        </div>
+                        <ul class="problem-list">
+                            <li><i class="fas fa-chevron-right"></i> Elmada overtime çıxan əməkdaşların adlarını qeyd etdikdə sistem siyahını PDF formatında verir</li>
+                            <li><i class="fas fa-chevron-right"></i> PDF format isə:
+                                <ul class="sub-list">
+                                    <li><i class="fas fa-minus"></i> Redaktə olunmur</li>
+                                    <li><i class="fas fa-minus"></i> Dəyişiklik etməyə imkan vermir</li>
+                                    <li><i class="fas fa-minus"></i> Flexible deyil (sətir silmək, ad düzəltmək, səhv məlumatı dəyişmək olmur)</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="info-box warning-box">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div>
+                                <strong>Nəticə:</strong> Hər hansısa düzəliş lazım olanda PDF-dən çıxarıb yenidən Excel yaratmaq məcburiyyəti yaranır. Bu isə əlavə vaxt aparır və səhv ehtimalını artırır
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution-description">
+                        <div class="section-badge solution-badge">
+                            <i class="fas fa-check-circle"></i> Təklif olunan həll mexanizmi
+                        </div>
+                        <div class="solution-steps">
+                            <div class="solution-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Elmada "inline edit" funksiyası</h4>
+                                    <p>Prosesə daxil olanda overtime siyahısında aşağıdakı dəyişiklikləri etmək mümkün olmalıdır:</p>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-edit"></i> Ad/Soyad düzəlişi</li>
+                                        <li><i class="fas fa-clock"></i> Saatların yenilənməsi</li>
+                                        <li><i class="fas fa-user-minus"></i> İşçinin siyahıdan silinməsi / əlavə edilməsi</li>
+                                        <li><i class="fas fa-sitemap"></i> Bölmə, tarix, struktur dəyişiklikləri</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Audit üçün dəyişikliklərin qeyd olunması</h4>
+                                    <p>Hər dəyişiklik loglarda qeyd olunmalıdır:</p>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-user"></i> Kim dəyişdi?</li>
+                                        <li><i class="fas fa-edit"></i> Nə dəyişdi?</li>
+                                        <li><i class="fas fa-calendar"></i> Nə vaxt dəyişdi?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problem 4 -->
+            <section class="problem-card" data-problem="4">
+                <div class="problem-header">
+                    <div class="problem-number">
+                        <span>04</span>
+                    </div>
+                    <div class="problem-title-section">
+                        <h2 class="problem-title">
+                            <i class="fas fa-calendar-times"></i>
+                            Proseslərin Eyni Gün Üzrə Kəsişmə Problemi
+                        </h2>
+                        <p class="problem-subtitle">Date Overlap (Tarix Konflikti)</p>
+                    </div>
+                </div>
+                
+                <div class="problem-body">
+                    <div class="problem-description">
+                        <div class="section-badge problem-badge">
+                            <i class="fas fa-bug"></i> Problem
+                        </div>
+                        <p class="problem-intro">Elma sistemində HR prosesləri — ezam, məzuniyyət, təlim, overtime və digər proseslər — paralel şəkildə yaradıldığı üçün eyni əməkdaş üçün eyni tarixə bir neçə proses təsdiqlənə bilir.</p>
+                        
+                        <div class="info-box error-box">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <strong>Sistem proseslər arasında tarix kəsişməsi (date conflict) üçün heç bir məhdudiyyət və ya xəbərdarlıq tətbiq etmir</strong>
+                            </div>
+                        </div>
+
+                        <ul class="problem-list">
+                            <li><i class="fas fa-chevron-right"></i> Eyni gün üçün əməkdaşın həm məzuniyyəti, həm də overtime təsdiqlənə bilir</li>
+                            <li><i class="fas fa-chevron-right"></i> Ezamiyyət ilə məzuniyyət, təlim ilə overtime və digər proseslər arasında məntiqsiz kəsişmələr yaranır</li>
+                            <li><i class="fas fa-chevron-right"></i> Təsdiqlənmiş proseslərin geri dönüşü və düzəldilməsi əlavə əməliyyat yükü yaradır</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution-description">
+                        <div class="section-badge solution-badge">
+                            <i class="fas fa-check-circle"></i> Həll təklifi
+                        </div>
+                        <div class="solution-steps">
+                            <div class="solution-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Date Conflict Check funksiyası əlavə olunmalıdır</h4>
+                                    <p>Sistemdə proses yaradılarkən və ya təsdiqlənərkən avtomatik yoxlama</p>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Eyni əməkdaş üçün tarix yoxlaması</h4>
+                                    <p>Sistem eyni və ya üst-üstə düşən tarixdə digər aktiv proseslərin olub-olmadığını yoxlamalıdır</p>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Kəsişmə aşkar olunarsa</h4>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-ban"></i> Proses yaratmağa icazə verməsin</li>
+                                        <li><i class="fas fa-bell"></i> Xəbərdarlıq pəncərəsi çıxarsın və istifadəçini təsdiq etməyə məcbur etsin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problem 5 -->
+            <section class="problem-card" data-problem="5">
+                <div class="problem-header">
+                    <div class="problem-number">
+                        <span>05</span>
+                    </div>
+                    <div class="problem-title-section">
+                        <h2 class="problem-title">
+                            <i class="fas fa-gavel"></i>
+                            Elmanın Overtime limitlərini düzgün tətbiq etməməsi
+                        </h2>
+                        <p class="problem-subtitle">Azərbaycan Əmək Məcəlləsi Pozuntusu</p>
+                    </div>
+                </div>
+                
+                <div class="problem-body">
+                    <div class="problem-description">
+                        <div class="section-badge problem-badge">
+                            <i class="fas fa-bug"></i> Problem
+                        </div>
+                        <div class="info-box law-box">
+                            <i class="fas fa-balance-scale"></i>
+                            <div>
+                                <strong>Azərbaycan Əmək Məcəlləsinə əsasən:</strong>
+                                <ul>
+                                    <li>✓ Bir iş günü ərzində maksimum <strong>4 saat</strong> overtime ola bilər</li>
+                                    <li>✓ İki gün ardıcıl olaraq da hər gün <strong>4 saatdan artıq</strong> overtime yazıla bilməz</li>
+                                    <li>✗ Gündə 4 saatdan çox əlavə iş → <strong class="danger">qanun pozuntusudur</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box error-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong>Hal-hazırda:</strong> Sistem bu limitləri avtomatik bloklamır və qanun pozuntusu yarana bilir
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution-description">
+                        <div class="section-badge solution-badge">
+                            <i class="fas fa-check-circle"></i> Təklif olunan həll
+                        </div>
+                        <div class="solution-steps">
+                            <div class="solution-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Overtime limitləri üzrə sistem məntiqi əlavə edilsin</h4>
+                                    <p>Elma aşağıdakı şərtləri avtomatik bloklamalıdır:</p>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Günlük limit yoxlaması</h4>
+                                    <p>Bir iş günü → 4 saatdan çox overtime daxil edilərsə → <strong>"Limit aşılır"</strong> xəbərdarlığı</p>
+                                </div>
+                            </div>
+                            <div class="solution-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Ardıcıl günlər üçün yoxlama</h4>
+                                    <p>Ardıcıl 2 və ya daha çox gün üçün əlavə iş saatları 4-dən artıqdırsa → proses təsdiqlənməməlidir</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <i class="fas fa-file-alt"></i>
+                    <p>Texniki Sənəd - Elma və HRB Sistem Təkmilləşdirməsi</p>
+                </div>
+                <div class="footer-date">
+                    <i class="fas fa-calendar"></i>
+                    <p>Hazırlanma tarixi: <span id="current-date"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
